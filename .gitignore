@@ -1,0 +1,9 @@
+*.log
+cache/
+tmp/
+*.tmp
+
+# 不上传私钥
+id_rsa
+*.pem
+*.key
