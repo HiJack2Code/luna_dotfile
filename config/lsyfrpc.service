@@ -1,0 +1,19 @@
+[Unit]
+Description=lsyFrpc
+After=network.target syslog.target
+
+[Service]
+Type=simple
+User=frp
+Group=frp
+ExecStart=/etc/frp/lsyFrpc/frpc -c /etc/frp/lsyFrpc/frpc.ini
+Restart=on-failure
+RestartSec=5
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+NoNewPrivileges=true
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
