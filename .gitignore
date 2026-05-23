@@ -5,6 +5,5 @@ tmp/
 
 # 不上传私钥
 id_rsa
-*.pe
-#*.key
 *.pem
+*.key
