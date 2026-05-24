@@ -7,3 +7,4 @@ tmp/
 id_rsa
 *.pem
 *.key
+*.session
